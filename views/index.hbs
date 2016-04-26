@@ -1,0 +1,17 @@
+<h2>File Uploader</h2>
+
+<form action="/fileupload" method="post" enctype="multipart/form-data" class="dropzone" id="dropzone-upload">
+  <input type="file" name="file" />
+
+</form>
+
+<div class="filelist">
+<h3>Uploaded Files:</h3>
+  <ul>
+  {{#each rows}}
+    <li>
+      {{this}}
+    </li>
+  {{/each}}
+  </ul>
+</div>
